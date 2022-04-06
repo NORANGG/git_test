@@ -1,0 +1,46 @@
+#app {width:400px; height:400px; margin:0 auto; position:relative;}
+#app img:nth-of-type(1) {width:50%;}
+
+.display {display: flex; align-items: center; justify-content: center; width:200px; height:50px; border:1px solid#000; border-radius: 20px;text-align: center; font-size:20px; margin:20px auto;}
+
+
+
+
+
+
+
+
+
+.marker {position:absolute; width: 40px; left:50%; top: -20px; z-index: 2;}
+
+.wheel {width:150%; height:150%;}
+
+.button {display:block; width:250px; margin: 40px auto; cursor: pointer;}
+.button:hover {opacity: 0.8;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
