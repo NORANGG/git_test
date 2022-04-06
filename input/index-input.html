@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../lib/css/common.css">
+    <script src="./script.js"></script>
+    <script src="../lib/js/jquery-1.12.4.min.js"></script>
+    <title>input모음</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="text">
+            <h2>text</h2>
+            <form>
+                이름 : <input type="text" name="name" size="10">
+            </form>
+        </div>
+
+
+
+        <div class="checkbox">
+            <h2>checkbox</h2>
+            <form>
+                <input type="checkbox" id="check" name="red" checked>
+                <label for="check">red</label>
+            </form>
+
+            <form>
+                <input type="checkbox" id="check2" name="blue">
+                <label for="check">blue</label>
+            </form>
+
+            <hr>
+
+            <input type="checkbox" name="food" value="black">짜장면
+            <input type="checkbox" name="food" value="yellow">어묵
+            <input type="checkbox" name="food" value="green">나물
+        </div>
+
+
+
+        <div class="color">
+            <h2>color</h2>
+            <form>
+                <input type="color" name="red" value="#f00000">
+                <label for="red">RED</label>
+            </form>
+            
+            <form>
+                <input type="color" name="yellow" value="#fff000">
+                <label for="red">YELLOW</label>
+            </form>
+
+            <input type="color" name="yellow" value="#fff000"> 노랑가로
+            <input type="color" name="yellow" value="#fff000"> 노랑가로2
+        </div>
+
+
+
+        <div class="date">
+            <h2>date</h2>
+            <form>
+                <input type="date" name="day" value="2022-04-05" min="1996-01-25" max="2111-01-25">
+            </form>
+        </div>
+
+
+
+        <div class="datetime-local">
+            <h2>datetime-local 날짜와 시간함께</h2>
+            <form>
+                <input type="datetime-local" name="meeting_time" value="2022-04-05T11:00" min="1996-01-25T00:00" max="2111-01-25T00:00">
+            </form>
+        </div>
+
+
+
+        <div class="email">
+            <h2>email</h2>
+            <form>
+                <input type="email" id="example" name="email" placeholder="norangkkum@naver.com" size="30" value="norangkkum_example@naver.com"><!--placeholder는 회색으로 예시 보여주는거고 value는 검은색으로 첨부터 쓰여져서 나와서 지우고 입력해야함-->
+            </form>
+
+            <div class="emalibox">
+                <label for="emailaddress">이메일을 입력하세요 : </label>
+                <input id="emailaddress" type="email" size="50" maxlength="64" required placeholder="norangkkum@naver.com" pattern=".+@beststartupever\.com">
+            </div>
+
+            <div class="messagebox">
+                <label for="message">메세지 : </label>
+                <textarea id="message" cols="60" rows="5" required placeholder="필수입력사항입니다"> <!--required는 필수입력사항-->
+                </textarea>
+            </div>
+
+            <input type="submit" value="확인">
+        </div>
+
+
+        <div class="file">
+            <h2>file</h2>
+            <form>
+                <input type="file" name="icon" accept=".jpg, .jpeg, .png" multiple>
+
+                <div class="preview">
+                    <p>파일이 없습니다. 업로드하세요.</p>
+                </div>
+
+                <button>확인</button>
+            </form>
+        </div>
+
+        
+
+        <div class="radio">
+            <h2>radio</h2>
+            <form>
+                <input type="radio" name="name" value="Hyejin" checked>
+                <label for="Hyejin">혜진</label>
+
+                <input type="radio" name="name" value="Heeju">
+                <label for="Heeju">희주</label>
+
+                <input type="radio" name="name" value="puren">
+                <label for="puren">푸른</label>
+            </form>
+        </div>
+
+
+
+        <div class="range">
+            <h2>range 오디오음량 등</h2>
+            <form>
+                <input type="range" name="volume" min="0" max="20" step="any" list="line"> <!--step에서 any는 임의. 속성값 넣고싶으면 2,4 등 숫자넣으면 됨-->
+                <label for="volume">음량</label>
+                
+                <datalist id="line">
+                    <option value="0" label="0%"></option>
+                    <option value="10"></option>
+                    <option value="20"></option>
+                    <option value="30"></option>
+                    <option value="40"></option>
+                    <option value="50" label="50%"></option>
+                    <option value="60"></option>
+                    <option value="70"></option>
+                    <option value="80"></option>
+                    <option value="90"></option>
+                    <option value="100" label="100%">
+                </datalist>
+            </form>
+        </div>
+
+
+
+        <div class="search">
+            <h2>search</h2>
+            <form>
+                <input type="search" name="search" placeholder="검색어를 입력하세요" size="60" autofocus>
+            </form>
+
+            <button>검색하기</button>
+        </div>
+
+
+
+        <div class="tel">
+            <h2>tel</h2>
+            <form>
+                <label for="tel_number">휴대폰번호입력 : </label>
+                <input type="tel" name="phone" placeholder="123-4567-8901" size="40" minlength="9" maxlength="12">
+            </form>
+        </div>
+
+
+
+        <div class="time">
+            <h2>time</h2>
+            <form>
+                <label for="tel_number">시간을 입력하세요 : </label>
+                <input type="time" name="time" min="00:00" max="24:00" required>
+            </form>
+        </div>
+
+
+
+        <div class="url">
+            <h2>url</h2>
+            <form>
+                <label for="tel_number">url 주소를 입력하세요 : </label>
+                <input type="url" name="url" placeholder="https://example.com" size="35">
+            </form>
+        </div>
+
+
+
+        <div class="image">
+            <h2>image</h2>
+            <form>
+                <input type="image" name="img" src="./lib/img/월드로또/1.png">
+            </form>
+        </div>
+
+
+
+        <div class="select">
+            <h2>select</h2>
+            
+            <select name="color">
+                <option value=""> - 선택 - </option>
+                <option value="red" selected>RED</option>
+                <option value="blue" disabled>BLUE</option>
+                <option value="orange">ORANGE</option>
+            </select>
+
+            <br><br>
+
+            <select name="color" size="10">
+                <option value=""> - 선택 - </option>
+                <option value="red" selected>RED</option>
+                <option value="blue" disabled>BLUE</option>
+                <option value="orange">ORANGE</option>
+                <option value="yellow">YELLOW</option>
+            </select>
+        </div>
+    </div>
+</body>
+</html>
