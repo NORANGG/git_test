@@ -1,0 +1,246 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+*{margin:0;padding:0;}
+.cp {cursor:pointer;}
+body {-webkit-text-size-adjust: 100%;}
+img {border:none}
+ul,li{ list-style:none;}
+input{text-align:center;}
+a { color:#000; text-decoration:none;}
+
+
+
+/*---------------------- 부터 pc -----------------------*/
+@media all and (min-width: 851px) {
+
+    /*---------------------- 부터 pc 틀 -----------------------*/
+    .br {display: none;}
+
+    * {border: 1px solid red--;}
+    .btg1  {background-color: #c3a64e; border:1px solid #c3a64e; color: #fff; }
+    .btg1:hover {background-color:#eed486; border-color:#c3a64e; color:#000;}
+    .btg2  {background-color: #fe7e00; border:1px solid #fe7e00; color: #ffffff;}
+    .btg2:hover{background-color:#288cf0; border-color:#288cf0; color:#fff;}
+
+
+    .btn1_1{width:100%; padding:15px; margin-top:10px; box-sizing: border-box; font-size:1.50em;  text-align: center; display:inline-block; vertical-align: top;cursor:pointer;}
+    .btn1_2{width:100%; padding:15px; margin-top:10px; box-sizing: border-box; font-size:1.50em;  text-align: center; display:inline-block; vertical-align: top;}
+    .btn1_3{width:100%; padding:5px; margin-top:2px; box-sizing: border-box; font-size:0.8em;  text-align: center; display:inline-block; vertical-align: top;}
+    .btn1_4{width:49%; padding:15px; margin-top:10px; box-sizing: border-box; font-size:1.50em;  text-align: center; display:inline-block; vertical-align: top;cursor:pointer;}
+    .btn1_5{width:250px; height:64px; font-size:23px; letter-spacing:-1px; line-height:2.5; padding:1px; padding-left:14px; padding-right:14px; margin-bottom:20px; box-sizing: border-box; text-align: center; display:inline-block; vertical-align: top;cursor:pointer;border-radius: 0px;}
+    .btn1_6{width:100%; padding:11px; box-sizing: border-box; font-size:1.50em;  text-align: center; display:inline-block; vertical-align: top;cursor:pointer;}
+    .btn1_7{float:left;  width:120px; height:25px; border-radius:2px; line-height:22px;margin:5px; margin-bottom:5px;}
+    .btn1_8{width:50%; height:25px; border-radius:2px; line-height:22px;margin:5px; margin-bottom:5px; text-align: center; display:inline-block; vertical-align: top;cursor:pointer;}
+    .btn1_9{width:230px; height:64px; font-size:23px; line-height:2.5; padding:1px; box-sizing: border-box; text-align: center; display:inline-block; vertical-align: top; cursor:pointer; border-radius: 7px; margin-top:15px;}
+
+
+
+    /* input[type="checkbox"] {display: none;}   체크박스 커스텀
+
+    input[type="checkbox"] + label{
+        margin-top:2px;
+        display: inline-block; 
+        cursor: pointer; 
+        line-height: 28px; 
+        padding-left: 35px; 
+        background: url('../월드로또_원페이지_img/check_base.png') no-repeat;
+        background-size:28px;
+    }
+
+    input[type=checkbox]:checked + label { background-image: url('../월드로또_원페이지_img/check_b.png'); } */
+
+
+    .input_1 { padding:15px; height:30px; text-align:center; width:430px; font-size:20px; color:#000; border-radius: 7px;}
+    .input_2 { padding:15px; height:30px; text-align:center; width:90%; font-size:20px; color:#000; border-radius: 0px;}
+    .input_3 {padding:15px; height:20px; text-align:left; width:30px; font-size:24px; color:#000; border-radius: 7px;}
+
+
+    #floatdiv {position:fixed; _position:absolute; z-index:-1; width:280px;display:inline-block;right:-70px; top:0%; background-color: transparent; margin:0;}
+
+    body {background:url(./연습용이미지_메인800.png); background-position:top; overflow:hidden;}
+
+
+
+    /*---------------------- 까지 pc 틀 -----------------------*/
+
+
+#wrap {width:100%; margin:0 auto; height:auto; overflow:hidden;}
+#wrap .main {width:100%; height:auto; overflow:hidden; margin-bottom:0px;}
+#wrap .main .logo {width:100px; display:block; margin:0 auto;}
+#wrap .main img {display:block; margin:0 auto;}
+
+
+#wrap nav {width: 100%; margin: 0 auto; text-align: center; justify-content: center; background:linear-gradient(90deg, rgba(207,25,251,1) 0%, rgba(250,231,5,1) 50%, rgba(0,212,255,1) 100%);}
+#wrap nav ul {display: flex;}
+#wrap nav ul li {line-height: 2; margin: 0 auto;}
+#wrap nav ul li a {font-size: 40px; font-weight: 700;}
+#wrap nav ul li a:hover {color: white;}
+
+
+
+
+.etc_10 {width: 100%; margin: 0 auto; text-align: center; background: #ff731e;}
+.etc_10_wrap {width: 100%; text-align: center; margin:0 auto; background: url(/img/back.png) no-repeat top center/contain; } /*pc는 850px로 맞추되, 크게 하고싶다면 이미지를 1900px로 바꾸고 width를 100%로*/
+.etc_10_wrap>img {width: 45%; margin: 7% auto 5% auto;}
+
+.etc_10_wrap .sec_02 {position: relative; margin: 0 auto; background: #ff731e; height: auto; padding-bottom: 0px; }
+.etc_10_wrap .sec_02 img {transform: translateY(-5%); width: 50%;}
+
+.etc_10_wrap .sec_03 {padding: 40px 0 50px 0; background: #9ae2ff;}
+.etc_10_wrap .sec_03 img {width: 50%;}
+
+.etc_10_wrap .sec_03 .lotto_slide {width: 68%; margin:0 auto; padding-top: 30px;}
+.etc_10_wrap .sec_03 .lotto_slide figure {padding-right: 5px; padding-left: 5px;}
+.etc_10_wrap .sec_03 .lotto_slide figure img {width: 100%; margin: 0 auto; border: 2px solid #000;}
+
+.etc_10_wrap .sec_04 {padding: 40px 0 0px 0; background: #ff731e;}
+.etc_10_wrap .sec_04 img {width: 40%;}
+
+
+.etc_10 .container {width: 100%; margin: 0 auto; text-align: center; background: #ff731e; padding: 20px 0 30px 0;}
+.etc_10 .info_02 {width: 100%; margin: 0 auto; text-align: center;}
+.etc_10 .info_02 .flex {display: flex; justify-content: center;}
+
+.etc_10 .info_02 .info_02_01 {margin-bottom:30px; margin-right: 10px; font-weight: bolder; border: 2px solid #000; width: 25%;}
+.etc_10 .info_02 .info_02_02 {margin-bottom:30px; margin-left: 10px; font-weight: bolder; border: 2px solid #000; width: 25%;}
+
+.etc_10 .info_02 .input_text {width:100%; height:80px; font-size:18px;}
+
+.etc_10 .info_02 .info5 {width: 350px; background: #ff731e; margin: 0 auto; padding: 13px 0px; border: 6px solid #79d8ff;}
+.etc_10 .info_02 button {color: #fff; font-size: 40px; font-weight: 500; font-family: 'Jua', sans-serif;}
+
+.etc_10 .info_02 .info5:hover button {color: #000;}
+
+
+
+
+
+.footer {width:100%; margin:0 auto; text-align:center; background:#000; overflow:hidden;/* border-top:1px solid #e6e6e5;border-footer:1px solid #ededea; */padding:18px 0 18px 0;}
+.footer span {display:block;}
+
+.footer .f_txt {display:block; font-size:13px; line-height: 1.6; color: #999;}
+.footer .f_txt em {font-style:normal;padding-left:10px; letter-spacing:-1px;}
+
+}
+
+
+
+
+/*---------------------- 까지 pc -----------------------*/
+
+
+
+
+
+
+
+/*---------------------- 부터 mo -----------------------*/
+
+@media all and (max-width: 850px) {
+
+    /*---------------------- 부터 mo 틀 -----------------------*/
+    .br {display: block;}
+
+    .btg1  {background-color: #c3a64e; border:1px solid #c3a64e; color: #fff;}
+    .btg1:hover{border-color:#c3a64e;background-color:#c3a64e;color:#fff;}
+    .btg2  {background-color: #fe7e00; border:1px solid #fe7e00; color: #ffffff;}
+    .btg2:hover{border-color:#288cf0;background-color:#288cf0;color:#fff;}
+
+
+    .btn1_1{width:100%; padding:15px; margin-top:10px; box-sizing: border-box; font-size:1.50em;  text-align: center; display:inline-block; vertical-align: top;cursor:pointer;}
+    .btn1_2{width:100%; padding:15px; margin-top:10px; box-sizing: border-box; font-size:1.50em;  text-align: center; display:inline-block; vertical-align: top;}
+    .btn1_3{width:100%; padding:5px; margin-top:2px; box-sizing: border-box; font-size:0.8em;  text-align: center; display:inline-block; vertical-align: top;}
+    .btn1_4{width:49%; padding:15px; margin-top:10px; box-sizing: border-box; font-size:1.50em;  text-align: center; display:inline-block; vertical-align: top;cursor:pointer;}
+    .btn1_5{width:90%; height:45px; font-size:13px; line-height:2.8; padding:1px; box-sizing: border-box; text-align: center; display:inline-block; vertical-align: top;cursor:pointer;border-radius: 0px;}
+    .btn1_6{width:100%; padding:11px; box-sizing: border-box; font-size:1.50em;  text-align: center; display:inline-block; vertical-align: top;cursor:pointer;}
+    .btn1_7{float:left;  width:120px; height:25px; border-radius:2px; line-height:22px;margin:5px; margin-bottom:5px;}
+    .btn1_8{width:50%; height:25px; border-radius:2px; line-height:22px;margin:5px; margin-bottom:5px; text-align: center; display:inline-block; vertical-align: top;cursor:pointer;}
+    .btn1_9{width:78%; height:45px; font-size:13px; line-height:2.8; padding:1px; box-sizing: border-box; text-align: center; display:inline-block; vertical-align: top;cursor:pointer;border-radius: 7px;}
+
+
+    /*input[type="checkbox"]{display: none;}   체크박스 커스텀
+
+    input[type="checkbox"] + label{
+        margin-top:2px;
+        display: inline-block; 
+        cursor: pointer; 
+        line-height: 28px; 
+        padding-left: 35px; 
+        background: url('../월드로또_원페이지_img/check_base.png') no-repeat;
+        background-size:28px;
+    }
+
+    input[type=checkbox]:checked + label { background-image: url('../월드로또_원페이지_img/check_b.png'); }
+
+
+    .input_a { padding:15px; height:17px; text-align:center; width:70%; font-size:14px; color:#000; border-radius: 7px;}
+    .input_b { padding:15px; height:17px; text-align:center; width:80%; font-size:14px; color:#000; border-radius: 0px;}
+    .input_c {padding:15px; height:20px; text-align:left; width:30px; font-size:24px; color:#000; border-radius: 7px;}*/
+
+
+    #floatdiv {display:none;}
+
+    body {background:url(./연습용이미지_메인1900.png); background-position:top; overflow:hidden;}
+
+    /*---------------------- 까지 mo 틀 -----------------------*/
+
+
+#wrap {width:100%; margin:0 auto; height:auto;overflow:hidden; position: relative;}
+#wrap .main {width:100%; margin:0 auto; height:auto;overflow:hidden; margin-bottom:0px;}
+#wrap .main .logo {width:100px; display:block; margin:0 auto;}
+#wrap .main img {width:100%;}
+
+
+
+
+.etc_10 {width: 100%; margin: 0 auto; text-align: center; background: #ff731e;}
+.etc_10_wrap {width: 100%; text-align: center; margin:0 auto; background: url(/img/back_m.png) no-repeat top center/contain; } /*pc는 850px로 맞추되, 크게 하고싶다면 이미지를 1900px로 바꾸고 width를 100%로*/
+.etc_10_wrap>img {width: 80%; margin: 7% auto 5% auto;}
+
+.etc_10_wrap .sec_02 {position: relative; margin: 0 auto; background: #ff731e; height: auto; padding-bottom: 0px; }
+.etc_10_wrap .sec_02 img {transform: translateY(-5%); width: 95%;}
+
+.etc_10_wrap .sec_03 {padding: 40px 0 50px 0; background: #9ae2ff;}
+.etc_10_wrap .sec_03 img {width: 95%;}
+
+.etc_10_wrap .sec_03 .lotto_slide {width: 95%; margin:0 auto; padding-top: 30px;}
+.etc_10_wrap .sec_03 .lotto_slide figure {padding-right: 5px; padding-left: 5px;}
+.etc_10_wrap .sec_03 .lotto_slide figure img {width: 100%; margin: 0 auto; border: 2px solid #000;}
+
+.etc_10_wrap .sec_04 {padding: 40px 0 0px 0; background: #ff731e;}
+.etc_10_wrap .sec_04 img {width: 95%;}
+
+
+.etc_10 .container {width: 100%; margin: 0 auto; text-align: center; background: #ff731e; padding-bottom: 0px;}
+.etc_10 .info_02 {width: 95%; padding: 20px 0 30px 0; margin: 0 auto; text-align: center;}
+.etc_10 .info_02 .flex {display: block; justify-content: center;}
+
+.etc_10 .info_02 .info_02_01 {margin-bottom:10px; margin-right: 0px; font-weight: bolder; border: 2px solid #000; width: 100%;}
+.etc_10 .info_02 .info_02_02 {margin-bottom:25px; margin-left: 0px; font-weight: bolder; border: 2px solid #000; width: 100%;}
+
+.etc_10 .info_02 .input_text {width: 100%; height:60px; font-size:15px;}
+
+.etc_10 .info_02 .info5 {width: 250px; background: #ff731e; margin: 0 auto; padding: 10px 0px; border: 4px solid #79d8ff;}
+.etc_10 .info_02 button {color: #fff; font-size: 26px; font-weight: 500; font-family: 'Jua', sans-serif;}
+
+.etc_10 .info_02 .info5:hover button {color: #000;}
+
+
+
+
+
+
+
+.footer {width:100%; margin:0 auto; text-align:center; background:#000; overflow:hidden;/* border-top:1px solid #e6e6e5;border-footer:1px solid #ededea; */padding:12px 0 14px 0;}
+.footer span {display:block;}
+
+.footer .f_txt {display:block; font-size:11px; line-height: 1.4; color: #999;}
+.footer .f_txt em {font-style:normal;padding-left:10px; letter-spacing:-1px;}
+}
+
+/*---------------------- 까지 mo -----------------------*/
+
+
+
+
+
